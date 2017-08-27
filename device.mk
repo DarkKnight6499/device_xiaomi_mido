@@ -136,10 +136,6 @@ PRODUCT_PACKAGES += \
     ethertypes \
     libebtc
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-    fingerprintd
-
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
@@ -279,3 +275,22 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/fstman.ini:system/etc/wifi/fstman.ini \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
+
+# Hals
+PRODUCT_PACKAGES += \
+    libbt-vendor \
+    android.hardware.biometrics.fingerprint@2.1-service \
+    android.hardware.light@2.0-impl \
+    android.hardware.drm@1.0-impl \
+    android.hardware.camera.provider@2.4-impl
+    camera.device@3.2-impl \
+    android.hardware.keymaster@3.0-impl \
+    android.hardware.gatekeeper@1.0-impl \
+#   android.hardware.sensors@1.0-impl \
+    wifilogd \
+    android.hardware.vibrator@1.0-impl \
+    android.hardware.power@1.0-impl \
+    android.hardware.gnss@1.0-impl \
+    android.hardware.usb@1.0-service
+
+
