@@ -28,7 +28,6 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <sys/sysinfo.h>
-
 #include "vendor_init.h"
 #include "property_service.h"
 #include "log.h"

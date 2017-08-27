@@ -256,7 +256,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     dhcpcd.conf \
     wpa_supplicant \
-    wpa_supplicant.conf \
     wificond \
     wcnss_service
 
@@ -282,7 +281,7 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service \
     android.hardware.light@2.0-impl \
     android.hardware.drm@1.0-impl \
-    android.hardware.camera.provider@2.4-impl
+    android.hardware.camera.provider@2.4-impl \
     camera.device@3.2-impl \
     android.hardware.keymaster@3.0-impl \
     android.hardware.gatekeeper@1.0-impl \
