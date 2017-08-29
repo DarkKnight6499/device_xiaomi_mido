@@ -103,7 +103,6 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8953 \
-    libmm-qcamera \
     SnapdragonCamera
 
 # Consumerir
@@ -284,13 +283,16 @@ PRODUCT_PACKAGES += \
     camera.device@3.2-impl \
     android.hardware.keymaster@3.0-impl \
     android.hardware.gatekeeper@1.0-impl \
-#   android.hardware.sensors@1.0-impl \
     wifilogd \
     android.hardware.vibrator@1.0-impl \
     android.hardware.power@1.0-impl \
     android.hardware.gnss@1.0-impl \
-    android.hardware.usb@1.0-service
+    android.hardware.usb@1.0-service \
+    android.hardware.sensors@1.0-impl
 
 # HIDL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
+
+# MSM8996 Headers
+PRODUCT_VENDOR_KERNEL_HEADERS := hardware/qcom/msm8996/kernel-headers
