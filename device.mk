@@ -108,7 +108,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8953 \
     libmm-qcamera \
-    SnapdragonCamera
+    camera.device@1.0-impl \
+    camera.device@3.2-impl \
+    android.hardware.camera.provider@2.4-impl \
 
 # Consumerir
 PRODUCT_PACKAGES += \
@@ -143,12 +145,13 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    fingerprintd
+    android.hardware.biometrics.fingerprint@2.1-service
 
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
-    libfmjni
+    libfmjni \
+    android.hardware.broadcastradio@1.0-impl
 
 # Fs_config
 PRODUCT_PACKAGES += \
@@ -266,10 +269,12 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.hardware.radio@1.0-impl \
     librmnetctl \
     libcnefeatureconfig \
     libxml2 \
-    rild_socket
+    rild_socket \
+    Stk
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
